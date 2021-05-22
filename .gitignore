@@ -16,7 +16,10 @@ results
 
 npm-debug.log
 node_modules
+log
+logs
 .idea
 .DS_Store
 dist
 .nyc_output
+
