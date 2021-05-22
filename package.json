@@ -1,0 +1,41 @@
+{
+  "name": "ts-axios-hbinr",
+  "version": "1.0.0",
+  "description": "typescrip实现axios,只实现功能和单元测试，不参与部署和发布",
+  "tags": [
+    "orm",
+    "typescript",
+    "koa"
+  ],
+  "scripts": {
+    "start": "nodemon",
+    "build": "rm -rf dist && tsc",
+    "pro": "npx pm2 start ecosystem.config.js --env production",
+    "restart": "pm2 restart ecosystem.config.js --env production",
+    "stop": "npx pm2 stop ecosystem.config.js"
+  },
+  "dependencies": {
+    "@blued-core/http-server": "^0.5.1",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.1",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.2",
+    "@types/node": "^12.0.0",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.19.0",
+    "pm2": "^3.5.0",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.9.0",
+    "ts-node": "^8.1.0",
+    "tsconfig-paths": "^3.8.0",
+    "typescript": "^3.4.5"
+  }
+}
